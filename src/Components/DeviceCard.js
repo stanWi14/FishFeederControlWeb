@@ -16,7 +16,6 @@ const DeviceCard = ({ deviceId, status }) => {
           <Button variant="primary" className="m-2">More</Button>
           <DeleteDevice deviceId={deviceId} />
         </Card.Body>
-        {/* <Card.Footer className="text-body-secondary">2 days ago</Card.Footer> */}
       </Card>
     </div>
   );

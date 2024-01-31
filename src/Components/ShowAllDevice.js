@@ -10,7 +10,7 @@ const ShowAllDevice = () => {
 
   useEffect(() => {
     const deviceCollection = collection(firestore, 'Devices');
-    // Set up a real-time listener
+    // Real-time listener
     const unsubscribe = onSnapshot(deviceCollection, (querySnapshot) => {
       const data = querySnapshot.docs.map((doc) => {
         const { ownerUID } = doc.data();
@@ -19,12 +19,12 @@ const ShowAllDevice = () => {
 
       setDeviceData(data);
     });
-    // Clean up the listener on component unmount
+    // Clean up listener on component
     return () => unsubscribe();
   }, []);
 
   return (
-    <Container fluid>
+    <Container fluid section id="devicelist" >
       <h1>FishFeeder Devices:</h1>
       <Row xs={1} sm={2} md={3} lg={4} xl={5}>
         {deviceData.map((device, index) => (
