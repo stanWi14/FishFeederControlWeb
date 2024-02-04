@@ -28,16 +28,16 @@ function NavBar() {
             navbarScroll
           >
             <Nav.Link as={Link} to="generatedevice" smooth={true} duration={500}>
-              Generate Device
+              <h5>Generate Device</h5>
             </Nav.Link>
             <Nav.Link as={Link} to="devicelist" smooth={true} duration={500}>
-              Device List
+            <h5>Device List</h5>
             </Nav.Link>
             <Nav.Link as={Link} to="documentation" smooth={true} duration={500}>
-              Documentation
+            <h5>Documentation</h5>
             </Nav.Link>
             <Nav.Link as={Link} to="about" smooth={true} duration={500}>
-              About Us
+            <h5>About Us</h5>
             </Nav.Link>
             {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item as={Link} to="action3" smooth={true} duration={500}>

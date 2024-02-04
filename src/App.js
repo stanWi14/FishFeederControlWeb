@@ -11,8 +11,8 @@ function App() {
     <div>
       <NavBar/>
       <WelcomePage/>
-      <ShowAllDevice/>
       <CreateDevice/>
+      <ShowAllDevice/>
     </div>
   );
 }
