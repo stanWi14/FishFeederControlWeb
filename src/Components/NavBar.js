@@ -36,7 +36,7 @@ function NavBar() {
             <Nav.Link as={Link} to="documentation" smooth={true} duration={500}>
             <h5>Documentation</h5>
             </Nav.Link>
-            <Nav.Link as={Link} to="about" smooth={true} duration={500}>
+            <Nav.Link as={Link} to="aboutus" smooth={true} duration={500}>
             <h5>About Us</h5>
             </Nav.Link>
             {/* <NavDropdown title="Link" id="navbarScrollingDropdown">

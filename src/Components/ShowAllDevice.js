@@ -24,8 +24,8 @@ const ShowAllDevice = () => {
   }, []);
 
   return (
-    <Container fluid section id="devicelist" >
-      <h1>FishFeeder Devices:</h1>
+    <Container fluid section id="devicelist" className='mt-5 pt-5'>
+      <h1 className='mt-5'>FishFeeder Devices:</h1>
       <Row xs={1} sm={2} md={3} lg={4} xl={5}>
         {deviceData.map((device, index) => (
           <Col key={index} className="mb-4">

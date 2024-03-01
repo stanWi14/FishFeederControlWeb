@@ -3,6 +3,8 @@ import { addDoc, collection, doc, setDoc } from 'firebase/firestore';
 import { firestore } from './firebase';
 import Accordion from 'react-bootstrap/Accordion';
 import firmwareTemplate from './FirmwareTemplate';
+import { Link } from 'react-scroll';
+
 
 const CreateDevice = () => {
   const [deviceId, setDocumentId] = useState('');
@@ -65,8 +67,8 @@ const CreateDevice = () => {
   };
 
   return (
-    <div section id="generatedevice" className='m-4'>
-      <h1 className="text-body mx-2">Generate New FishFeeder Device</h1>
+    <div section id="generatedevice" className='mx-4 pt-5 mt-5'>
+      <h1 className="text-body mx-2 mt-4">Generate New FishFeeder Device</h1>
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header><h5>1.Generate Device Component & Storage</h5></Accordion.Header>
@@ -125,11 +127,17 @@ const CreateDevice = () => {
               </div>
               <div className="d-flex align-items-center">
                 <p className='my-2'>First Time using Arduino IDE:</p>
-                <div className="d-flex">
-                  <button type="button" className="btn btn-primary mx-2 ">
-                    Set up your Arduino IDE Environment
+                <Link
+                  to="documentation"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  <button type="button" className="btn btn-primary mx-2">
+                    Go to Document Section
                   </button>
-                </div>
+                </Link>
               </div>
               </>
             ) : (

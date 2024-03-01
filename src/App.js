@@ -5,6 +5,10 @@ import CreateDevice from './Components/CreateDevice';
 import DeviceCard from './Components/DeviceCard';
 import NavBar from './Components/NavBar';
 import WelcomePage from './Components/Welcome';
+import AboutUs from './Components/AboutUs';
+import Documentation from './Components/Documentation';
+
+
 
 function App() {
   return (
@@ -13,6 +17,8 @@ function App() {
       <WelcomePage/>
       <CreateDevice/>
       <ShowAllDevice/>
+      <Documentation/>
+      <AboutUs/>
     </div>
   );
 }
